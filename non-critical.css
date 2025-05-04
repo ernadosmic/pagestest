@@ -1,0 +1,79 @@
+/* Non-critical CSS that can be loaded after initial render */
+
+/* Transitions (not critical for initial render) */
+.container {
+    transition: max-width 0.3s ease;
+}
+
+.image-area {
+    transition: min-height 0.3s ease;
+}
+
+.image-placeholder {
+    transition: all 0.3s ease;
+}
+
+/* Custom button styling */
+.btn-primary {
+    background-color: #4285f4;
+    border-color: #4285f4;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #3367d6;
+    border-color: #3367d6;
+}
+
+/* Form elements transitions */
+.form-control, .form-label {
+    transition: all 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+    
+    .image-placeholder {
+        min-height: 35vh;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    .image-placeholder {
+        min-height: 40vh;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 800px;
+    }
+    
+    .image-placeholder {
+        min-height: 45vh;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 900px;
+    }
+}
+
+/* Small screen heights */
+@media (max-height: 600px) {
+    .image-area {
+        min-height: 25vh;
+    }
+    
+    .image-placeholder {
+        min-height: 25vh;
+    }
+}
